@@ -160,7 +160,7 @@ approach scales to dozens of skills without degrading model attention.
 
 ```sh
 cd learn-claude-code
-python agents/s05_knowledge_loading.py
+python agents/s05_skill_loading.py
 ```
 
 Example prompts to try:
