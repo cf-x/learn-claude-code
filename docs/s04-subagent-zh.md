@@ -134,7 +134,7 @@ Claude Code 通过 Task 工具和 `spawn()` 实现了这一机制。当模型调
 
 ```sh
 cd learn-claude-code
-python agents/s04_context_isolation.py
+python agents/s04_subagent.py
 ```
 
 可以尝试的提示:
