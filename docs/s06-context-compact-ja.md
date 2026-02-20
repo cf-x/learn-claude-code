@@ -159,7 +159,7 @@ Claude Codeは3つの層すべてを実装している。micro-compactionは自�
 
 ```sh
 cd learn-claude-code
-python agents/s06_compression.py
+python agents/s06_context_compact.py
 ```
 
 試せるプロンプト例:
