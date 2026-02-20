@@ -203,7 +203,7 @@ Claude Codeは同じidle/poll/claimサイクルで自律的なチームメイト
 
 ```sh
 cd learn-claude-code
-python agents/s11_autonomous.py
+python agents/s11_autonomous_agents.py
 ```
 
 試せるプロンプト例:
