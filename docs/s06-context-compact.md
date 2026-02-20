@@ -179,7 +179,7 @@ should never be compressed (like CLAUDE.md instructions).
 
 ```sh
 cd learn-claude-code
-python agents/s06_compression.py
+python agents/s06_context_compact.py
 ```
 
 Example prompts to try:
