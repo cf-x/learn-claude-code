@@ -145,7 +145,7 @@ not change.
 
 ```sh
 cd learn-claude-code
-python agents/s02_multi_tool.py
+python agents/s02_tool_use.py
 ```
 
 Example prompts to try:
