@@ -203,7 +203,7 @@ Claude Code 以相同的 idle/poll/claim 循环实现自治队友。生产版本
 
 ```sh
 cd learn-claude-code
-python agents/s11_autonomous.py
+python agents/s11_autonomous_agents.py
 ```
 
 可以尝试的提示:
