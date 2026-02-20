@@ -148,7 +148,7 @@ Claude Code 通过 Task 工具和 `.tasks/` 目录实现了基于文件的任务
 
 ```sh
 cd learn-claude-code
-python agents/s07_file_tasks.py
+python agents/s07_task_system.py
 ```
 
 可以尝试的提示:
