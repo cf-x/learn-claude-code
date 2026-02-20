@@ -166,7 +166,7 @@ sequential focus, preventing the model from context-switching too rapidly.
 
 ```sh
 cd learn-claude-code
-python agents/s03_structured_planning.py
+python agents/s03_todo_write.py
 ```
 
 Example prompts to try:
