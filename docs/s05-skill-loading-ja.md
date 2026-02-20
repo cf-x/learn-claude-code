@@ -142,7 +142,7 @@ Claude CodeではこれをSkillツールとして実装している。スキル�
 
 ```sh
 cd learn-claude-code
-python agents/s05_knowledge_loading.py
+python agents/s05_skill_loading.py
 ```
 
 試せるプロンプト例:
