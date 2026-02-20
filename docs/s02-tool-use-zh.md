@@ -129,7 +129,7 @@ Claude Code 使用相同的 dispatch map 模式。工具注册在工具注册表
 
 ```sh
 cd learn-claude-code
-python agents/s02_multi_tool.py
+python agents/s02_tool_use.py
 ```
 
 可以尝试的提示:
