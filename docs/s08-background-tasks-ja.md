@@ -167,7 +167,7 @@ Claude Codeではバックグラウンドタスクを別プロセスとして実
 
 ```sh
 cd learn-claude-code
-python agents/s08_background.py
+python agents/s08_background_tasks.py
 ```
 
 試せるプロンプト例:
