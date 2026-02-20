@@ -142,7 +142,7 @@ Claude Code 通过 Skill 工具实现了这一机制。技能以 SKILL.md 文件
 
 ```sh
 cd learn-claude-code
-python agents/s05_knowledge_loading.py
+python agents/s05_skill_loading.py
 ```
 
 可以尝试的提示:
