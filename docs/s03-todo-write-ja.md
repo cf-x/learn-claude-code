@@ -146,7 +146,7 @@ Claude Codeも同じパターンをTodoWriteツールとTodoReadツールで実�
 
 ```sh
 cd learn-claude-code
-python agents/s03_structured_planning.py
+python agents/s03_todo_write.py
 ```
 
 試せるプロンプト例:
