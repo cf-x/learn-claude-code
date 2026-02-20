@@ -134,7 +134,7 @@ Claude Codeではこれを`spawn()`付きのTaskツールとして実装して�
 
 ```sh
 cd learn-claude-code
-python agents/s04_context_isolation.py
+python agents/s04_subagent.py
 ```
 
 試せるプロンプト例:
