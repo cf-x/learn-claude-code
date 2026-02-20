@@ -159,7 +159,7 @@ Claude Code 实现了全部三层。Micro-compaction 自动进行 -- 旧的工�
 
 ```sh
 cd learn-claude-code
-python agents/s06_compression.py
+python agents/s06_context_compact.py
 ```
 
 可以尝试的提示:
