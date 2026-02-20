@@ -168,7 +168,7 @@ in the correct order even when the agent's context has been compressed.
 
 ```sh
 cd learn-claude-code
-python agents/s07_file_tasks.py
+python agents/s07_task_system.py
 ```
 
 Example prompts to try:
