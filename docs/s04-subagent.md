@@ -154,7 +154,7 @@ iteration count.
 
 ```sh
 cd learn-claude-code
-python agents/s04_context_isolation.py
+python agents/s04_subagent.py
 ```
 
 Example prompts to try:
