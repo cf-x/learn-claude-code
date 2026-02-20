@@ -147,7 +147,7 @@ Claude Code 通过 TodoWrite 和 TodoRead 工具实现了同样的模式。模�
 
 ```sh
 cd learn-claude-code
-python agents/s03_structured_planning.py
+python agents/s03_todo_write.py
 ```
 
 可以尝试的提示:
