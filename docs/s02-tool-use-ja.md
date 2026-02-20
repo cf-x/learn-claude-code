@@ -129,7 +129,7 @@ Claude Codeも同じディスパッチマップパターンを使用している
 
 ```sh
 cd learn-claude-code
-python agents/s02_multi_tool.py
+python agents/s02_tool_use.py
 ```
 
 試せるプロンプト例:
