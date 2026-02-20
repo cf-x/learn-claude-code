@@ -200,7 +200,7 @@ Claude Code 通过 TeammateManager 实现队友管理, 通过 SendMessage 工具
 
 ```sh
 cd learn-claude-code
-python agents/s09_team_messaging.py
+python agents/s09_agent_teams.py
 ```
 
 可以尝试的提示:
