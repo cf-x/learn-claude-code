@@ -228,7 +228,7 @@ proper file locking.
 
 ```sh
 cd learn-claude-code
-python agents/s09_team_messaging.py
+python agents/s09_agent_teams.py
 ```
 
 Example prompts to try:
