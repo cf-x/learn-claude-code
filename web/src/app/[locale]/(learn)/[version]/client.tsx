@@ -7,6 +7,7 @@ import { DocRenderer } from "@/components/docs/doc-renderer";
 import { SourceViewer } from "@/components/code/source-viewer";
 import { AgentLoopSimulator } from "@/components/simulator/agent-loop-simulator";
 import { ExecutionFlow } from "@/components/architecture/execution-flow";
+import { SessionVisualization } from "@/components/visualizations";
 
 interface VersionDetailClientProps {
   version: string;
@@ -32,6 +33,9 @@ export function VersionDetailClient({
     <>
       {/* Agent Loop Simulator */}
       <AgentLoopSimulator version={version} />
+
+      {/* Concept Visualization */}
+      <SessionVisualization version={version} />
 
       {/* Execution Flow Diagram */}
       <ExecutionFlow version={version} />

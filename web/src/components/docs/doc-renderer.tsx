@@ -83,7 +83,7 @@ function renderMarkdown(md: string): string {
 }
 
 export function DocRenderer({ version }: DocRendererProps) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const locale = useLocale();
   const t = useTranslations("version");
 
