@@ -167,7 +167,7 @@ Claude Code 以独立进程运行后台任务。测试套件或构建等长时�
 
 ```sh
 cd learn-claude-code
-python agents/s08_background.py
+python agents/s08_background_tasks.py
 ```
 
 可以尝试的提示:
