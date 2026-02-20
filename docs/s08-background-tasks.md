@@ -184,7 +184,7 @@ rather than interrupting mid-thought.
 
 ```sh
 cd learn-claude-code
-python agents/s08_background.py
+python agents/s08_background_tasks.py
 ```
 
 Example prompts to try:
