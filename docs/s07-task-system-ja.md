@@ -148,7 +148,7 @@ Claude CodeではTaskツールと`.tasks/`ディレクトリを通じてファ�
 
 ```sh
 cd learn-claude-code
-python agents/s07_file_tasks.py
+python agents/s07_task_system.py
 ```
 
 試せるプロンプト例:
