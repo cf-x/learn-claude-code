@@ -58,6 +58,7 @@ function DecisionCard({
   locale: string;
 }) {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("version");
 
   const localized =
     locale !== "en" ? (decision as unknown as Record<string, unknown>)[locale] as { title?: string; description?: string } | undefined : undefined;
@@ -100,7 +101,7 @@ function DecisionCard({
               {decision.alternatives && (
                 <div className="mt-3">
                   <h4 className="text-xs font-medium uppercase tracking-wide text-zinc-400 dark:text-zinc-500">
-                    Alternatives Considered
+                    {t("alternatives")}
                   </h4>
                   <p className="mt-1 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
                     {decision.alternatives}

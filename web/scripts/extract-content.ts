@@ -100,15 +100,13 @@ function countLoc(lines: string[]): number {
 }
 
 // Detect locale from doc filename
+// Supports suffix-based detection: s01-the-agent-loop-zh.md -> "zh"
 function detectLocale(filename: string): "en" | "zh" | "ja" {
-  // Strip the version prefix (e.g., "s01-")
-  const afterPrefix = filename.replace(/^s\d+[a-c]?-/, "");
+  const base = filename.replace(/\.md$/, "");
 
-  // Check for Japanese (katakana/hiragana)
-  if (/[\u3040-\u309F\u30A0-\u30FF]/.test(afterPrefix)) return "ja";
-
-  // Check for Chinese (CJK unified ideographs, but not Japanese)
-  if (/[\u4E00-\u9FFF]/.test(afterPrefix)) return "zh";
+  // Check for explicit locale suffix
+  if (base.endsWith("-zh")) return "zh";
+  if (base.endsWith("-ja")) return "ja";
 
   return "en";
 }

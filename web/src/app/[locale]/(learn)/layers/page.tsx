@@ -12,14 +12,6 @@ import versionData from "@/data/generated/versions.json";
 
 const data = versionData as VersionIndex;
 
-const LAYER_DESCRIPTIONS: Record<string, string> = {
-  tools: "What the agent CAN do. The foundation: tools give the model capabilities to interact with the world.",
-  planning: "How work is organized. From simple todo lists to dependency-aware task boards shared across agents.",
-  memory: "Keeping context within limits. Compression strategies that let agents work infinitely without losing coherence.",
-  concurrency: "Non-blocking execution. Background threads and notification buses for parallel work.",
-  collaboration: "Multi-agent coordination. Teams, messaging, and autonomous teammates that think for themselves.",
-};
-
 const LAYER_BORDER_CLASSES: Record<string, string> = {
   tools: "border-l-blue-500",
   planning: "border-l-emerald-500",
@@ -74,7 +66,7 @@ export default function LayersPage() {
                     {layer.label}
                   </h2>
                   <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-                    {LAYER_DESCRIPTIONS[layer.id]}
+                    {t(layer.id)}
                   </p>
                 </div>
               </div>

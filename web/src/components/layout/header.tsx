@@ -24,11 +24,20 @@ export function Header() {
   const pathname = usePathname();
   const locale = useLocale();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(() => {
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("theme");
+      if (stored) return stored === "dark";
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+    return false;
+  });
 
   function toggleDark() {
-    setDark(!dark);
-    document.documentElement.classList.toggle("dark");
+    const next = !dark;
+    setDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
   }
 
   function switchLocale(newLocale: string) {
@@ -86,7 +95,7 @@ export function Header() {
           </button>
 
           <a
-            href="https://github.com/anthropics/anthropic-cookbook"
+            href="https://github.com/shareAI-lab/learn-claude-code"
             target="_blank"
             rel="noopener"
             className="text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-white"
@@ -142,7 +151,7 @@ export function Header() {
                 {dark ? <Sun size={18} /> : <Moon size={18} />}
               </button>
               <a
-                href="https://github.com/anthropics/anthropic-cookbook"
+                href="https://github.com/shareAI-lab/learn-claude-code"
                 target="_blank"
                 rel="noopener"
                 className="flex min-h-[44px] min-w-[44px] items-center justify-center text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-white"
